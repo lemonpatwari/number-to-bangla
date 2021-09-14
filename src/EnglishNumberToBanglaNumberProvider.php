@@ -3,6 +3,8 @@
 namespace lemonpatwari\BanglaNumber;
 
 use Illuminate\Support\ServiceProvider;
+use lemonpatwari\BanglaNumber\Console\LpCommand;
+
 
 class EnglishNumberToBanglaNumberProvider extends ServiceProvider
 {
@@ -13,9 +15,16 @@ class EnglishNumberToBanglaNumberProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton(NumberToBangla::class);
+        if ($this->app->runningInConsole()) {
+            $this->app->singleton(NumberToBangla::class);
 
-        $this->app->alias(NumberToBangla::class, 'bangla-number');
+            $this->app->alias(NumberToBangla::class, 'bangla-number');
+
+
+            $this->commands([
+                LpCommand::class,
+            ]);
+        }
     }
 
     /**
