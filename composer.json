@@ -1,0 +1,26 @@
+{
+    "name": "lemonpatwari/number-to-bangla",
+    "description": "This will generate english number to bangla number",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lemon Patwari",
+            "email": "lemonpatwari@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "lemonpatwari\\BanglaNumber\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lemonpatwari\\BanglaNumber\\EnglishNumberToBanglaNumberProvider"
+            ]
+        }
+    }
+}
