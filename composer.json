@@ -1,12 +1,15 @@
 {
     "name": "lemonpatwari/number-to-bangla",
     "description": "This will generate english number to bangla number",
+    "keywords": ["laravel","Laravel-number-bangla","number-bangla","number-month","number-to-bangla","lemonpatwari"],
+    "homepage": "https://github.com/lemonpatwari/number-to-bangla",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Lemon Patwari",
-            "email": "lemonpatwari@gmail.com"
+            "email": "lemonpatwari@gmail.com",
+             "homepage": "https://lemonpatwari.com"
         }
     ],
     "minimum-stability": "dev",
